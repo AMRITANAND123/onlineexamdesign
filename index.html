@@ -3,219 +3,155 @@
 
 <head>
 
+
+
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    
+
     <meta charset="UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock title %}</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Facebook Phishing Page | Pixel Computer Institute</title>
+    
 
-    </head>
-<body>
+</head>
 
-
-<section>
-<div class="bg-black text-white">
-<h1 class="text-xl p-2">10th Hindi Mock Test </h1>
-</div>
-<h1 class="m-0 p-2 text-xl ">Left Time: <span id="hours"></span>H : 
-
-    <span id="minutes"></span>M : 
-    <span id="seconds"></span>S</h1>
-<script>
-       (() => {
-                const deadlineDate = new Date('May 15, 2022 10:59:59').getTime();
-                // const countdownDays = document.getElementById('days');
-                const countdownHours = document.getElementById('hours');
-                const countdownMinutes = document.getElementById('minutes');
-                const countdownSeconds = document.getElementById('seconds');
-
-                setInterval ( () => {
-                    const currentDate = new Date().getTime();
-                    const distance = deadlineDate - currentDate;
-
-                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                    const seconds = Math.floor((distance %  (1000 * 60)) / 1000);
-
-                    // countdownDays.innerHTML = days;
-                    countdownHours.innerHTML = hours;
-                    countdownMinutes.innerHTML = minutes;
-                    countdownSeconds.innerHTML = seconds;
-                }, 1000);
-            })();
-
-</script>
+<body class="bg-yellow-400">
+    <h2 class="text-left ml-4 text-xl md:text-3xl bg-yellow-400 p-2 m-2 font-bold">Pixel Computer Institute</h2>
 
 
-    <div class="mx-4 md:mx-8 p-1">
-        <div class="grid grid-cols-8">
-            <div class="col-span-1 md:col-span-2 overflow-auto h-64">
+    <div class="max-w-4xl flex items-center h-auto  flex-wrap mx-auto my-32 lg:my-0">
 
-                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-2 mt-2">
+        <!--Main Col-->
+        <div id="profile"
+            class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
 
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">1</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">2</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">3</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">4</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">5</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">6</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">7</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">8</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">9</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">10</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">11</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">12</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">13</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">14</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">15</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">16</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">17</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">17</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">17</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">17</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">17</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">17</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">17</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">17</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">17</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">17</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">17</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">17</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">17</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">17</button>
-                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">17</button>
+
+            <div class="p-4 md:p-12 text-center lg:text-left">
+                <!-- Image for mobile view-->
+                <div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
+                    style="background-image: url('https://source.unsplash.com/MP0IUfwrn0A')"></div>
+
+                <h1 class="text-3xl font-bold pt-8 lg:pt-0">Live Phishing Attack</h1>
+                <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
+                <p class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"> A Free One Day
+                    WorkShop On
+                    Phishing Page
+                    of Social Site Facebook (Next Week)</p>
+                <p
+                    class="pt-2 text-gray-600 text-xl font-bold text-gray-900 flex items-center justify-center lg:justify-start">
+                    Get Certificate All Participants </p>
+
+                <div class="pt-4 pb-4">
+                    <button class="modal-open bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
+                        Book Seat
+                    </button>
+                </div>
+                <p class="p-2 text-black border-l-4 border-black text-left ml-2"> <span
+                        class="font-bold">Eligibility:</span> It's a basic level workshop so there are no prerequisites.
+                    Any one interested, can join this workshop.</p>
+                <div class="mt-2 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
+                    <p>This workshop aims to give a basic knowledge of Phising pages and how to protect your system
+                        against Phishing Attacks.</p>
+
                 </div>
 
-            </div>
-            <div class="col-span-7 md:col-span-6 p-4">
-                <h2 class="text-sm">Ques 1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, corporis
-                    quisquam doloremque quidem quas, repudiandae  br
-                    <br> <br> vero iste possimus voluptate numquam ipsum laborum,
-                    optio animi! Id pariatur quibusdam odio maxime nesciunt!.</h2>
-                    <div class="pl-2 pt-2">
+                <!-- Use https://simpleicons.org/ to find the svg for your preferred product -->
 
-                 
-                <input type="radio" id="html" name="fav_language" value="HTML">
-                <label for="html">HTML</label><br>
-                <input type="radio" id="css" name="fav_language" value="CSS">
-                <label for="css">CSS</label><br>
-                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                <label for="javascript">JavaScript</label> <br>
-                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                <label for="javascript">JavaScript</label>
             </div>
-            </div>
+
         </div>
 
-<div class="text-sm">
-        <button
-            class="bg-yellow-400 text-black hover:bg-yellow-500  border border-yellow-500 hover:border-yellow-600 shadow font-semibold px-1 py-1 inline-block mx-2 my-1  w-24 text-center"><i
-                class="fas fa-arrow-circle-left"></i> Previous</button>
-        <button
-            class="bg-yellow-400 text-black hover:bg-yellow-500  border border-yellow-500 hover:border-yellow-600 shadow font-semibold px-1 py-1 inline-block mx-2 my-1  w-18 text-center"><i
-                class="fas fa-flag"></i> Flag</button>
-        <button
-            class="bg-yellow-400 text-black hover:bg-yellow-500  border border-yellow-500 hover:border-yellow-600 shadow font-semibold px-1 py-1 inline-block mx-2 my-1  w-18 text-center">
-            Next <i class="fas fa-arrow-circle-right"></i></button>
-            <hr>
-            <p class="text-center"><span>0</span> Attemped, 
-                <span>12</span> Not Attemped, 
-                <span>23</span> Flag
-         </p>
+        <!--Img Col-->
+        <div class="w-full lg:w-2/5">
+            <!-- Big profile image for side bar (desktop) -->
+            <img src="https://source.unsplash.com/MP0IUfwrn0A"
+                class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
+            <!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
 
-            <div class="bg-black py-2 mx-auto"> 
-                <button onclick="openModal(true)"
-                class="bg-green-600 text-black hover:bg-green-500 rounded border border-black font-semibold px-1 py-1 inline-block mx-1 my-1  w-32 text-center">
-                Instructions</button>
-                 <button
-                class="bg-red-600 text-black hover:bg-green-500  rounded shadow font-semibold px-1 py-1 inline-block mx-1 my-1  w-32 text-center">
-                End Test <i class="fas fa-hourglass-end"></i></button>
-    
+        </div>
+
+
+
+    </div>
+
+    <div class="bg-gray-900 text-white m-4 p-2 text-sm text-center md:text-xl">
+        <p>THIS WORKSHOP IS ONLY FOR EDUCATIONAL PURPOSE NOT FOR HACKING PURPOSE</p>
+    </div>
+
+
+    <!--Modal-->
+    <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+      <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+      
+      <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+        
+        <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+          <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+            <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+          <span class="text-sm">(Esc)</span>
+        </div>
+  
+        <!-- Add margin if you want to see some of the overlay behind the modal-->
+        <div class="modal-content py-4 text-left px-6">
+          <!--Title-->
+          <div class="flex justify-between items-center pb-3">
+            <p class="text-2xl font-bold">Book Your Seat</p>
+            <div class="modal-close cursor-pointer z-50">
+              <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+              </svg>
             </div>
-           
+          </div>
+  
+          <!--Body-->
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEZgCv6PqjkOjE-gR6cQyiouUA8Ku2-m8oCwZKUZNBgLeLHg/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          
         </div>
-
+      </div>
     </div>
-</section>
-
-
-
-<!-- overlay -->
-<div id="modal_overlay" class="hidden absolute inset-0 bg-black bg-opacity-30 h-screen w-full flex justify-center items-start md:items-center pt-10 md:pt-0">
-
-    <!-- modal -->
-    <div id="modal" class="pacity-0 transform -translate-y-full overflow-y-auto scale-150  relative w-10/12 md:w-1/2 h-3/4  md:h-3/4 bg-white rounded shadow-lg transition-opacity transition-transform duration-300">
-    
-        <!-- button close -->
-        <button 
-        onclick="openModal(false)"
-        class="absolute top-1 right-3 bg-yellow-500 hover:bg-red-600 text-2xl w-10 h-10 rounded-full focus:outline-none text-white">
-        <i class="fas fa-times"></i>
-        </button>
-    
-        <!-- header -->
-        <div class="px-4 py-3 border-b bg-gray-900 border-gray-200">
-        <h2 class="text-xl font-semibold text-gray-100">Instructions:</h2>
-        </div>
-    
-        <!-- body -->
-        <div class="w-full h-auto p-3 ">
-            <ul class="list-disc pl-8">
-                <li>sa s as  sa s a s a sa a s </li>
-                <li>sa s as  sa s a s a sa a s </li>
-                <li>sa s as  sa s a s a sa a s </li>
-                <li>sa s as  sa s a s a sa a s </li>
-                <li>sa s as  sa s a s a sa a s </li>
-                <li>sa s as  sa s a s a sa a s </li>
-                <li>sa s as  sa s a s a sa a s </li>
-                <li>sa s as  sa s a s a sa a s </li>
-                <li>sa s as  sa s a s a sa a s </li>
-                <li>sa s as  sa s a s a sa a s </li>
-            </ul>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, quis tempora! Similique, explicabo quaerat maxime corrupti tenetur blanditiis voluptas molestias totam? Quaerat laboriosam suscipit repellat aliquam blanditiis eum quos nihil.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, quis tempora! Similique, explicabo quaerat maxime corrupti tenetur blanditiis voluptas molestias totam? Quaerat laboriosam suscipit repellat aliquam blanditiis eum quos nihil.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, quis tempora! Similique, explicabo quaerat maxime corrupti tenetur blanditiis voluptas molestias totam? Quaerat laboriosam suscipit repellat aliquam blanditiis eum quos nihil.
-    
-            
-    </div>
-    
-
-    </div>
-    
-    </div>
-    
+  
     <script>
-    const modal_overlay = document.querySelector('#modal_overlay');
-    const modal = document.querySelector('#modal');
-    
-    function openModal (value){
-        const modalCl = modal.classList
-        const overlayCl = modal_overlay
-    
-        if(value){
-        overlayCl.classList.remove('hidden')
-        setTimeout(() => {
-            modalCl.remove('opacity-0')
-            modalCl.remove('-translate-y-full')
-            modalCl.remove('scale-150')
-        }, 100);
+      var openmodal = document.querySelectorAll('.modal-open')
+      for (var i = 0; i < openmodal.length; i++) {
+        openmodal[i].addEventListener('click', function(event){
+          event.preventDefault()
+          toggleModal()
+        })
+      }
+      
+      const overlay = document.querySelector('.modal-overlay')
+      overlay.addEventListener('click', toggleModal)
+      
+      var closemodal = document.querySelectorAll('.modal-close')
+      for (var i = 0; i < closemodal.length; i++) {
+        closemodal[i].addEventListener('click', toggleModal)
+      }
+      
+      document.onkeydown = function(evt) {
+        evt = evt || window.event
+        var isEscape = false
+        if ("key" in evt) {
+          isEscape = (evt.key === "Escape" || evt.key === "Esc")
         } else {
-        modalCl.add('-translate-y-full')
-        setTimeout(() => {
-            modalCl.add('opacity-0')
-            modalCl.add('scale-150')
-        }, 100);
-        setTimeout(() => overlayCl.classList.add('hidden'), 300);
+          isEscape = (evt.keyCode === 27)
         }
-    }
-    openModal(true)
+        if (isEscape && document.body.classList.contains('modal-active')) {
+          toggleModal()
+        }
+      };
+      
+      
+      function toggleModal () {
+        const body = document.querySelector('body')
+        const modal = document.querySelector('.modal')
+        modal.classList.toggle('opacity-0')
+        modal.classList.toggle('pointer-events-none')
+        body.classList.toggle('modal-active')
+      }
+      
+       
     </script>
 </body>
 
