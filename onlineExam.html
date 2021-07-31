@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    </head>
+<body>
+
+
+<section>
+<div class="bg-black text-white">
+<h1 class="text-xl p-2"> Mock Test </h1>
+</div>
+<h1 class="m-0 p-2 text-xl ">Left Time: <span id="hours"></span>H : 
+
+    <span id="minutes"></span>M : 
+    <span id="seconds"></span>S</h1>
+<script>
+       (() => {
+                const deadlineDate = new Date('May 15, 2022 10:59:59').getTime();
+                // const countdownDays = document.getElementById('days');
+                const countdownHours = document.getElementById('hours');
+                const countdownMinutes = document.getElementById('minutes');
+                const countdownSeconds = document.getElementById('seconds');
+
+                setInterval ( () => {
+                    const currentDate = new Date().getTime();
+                    const distance = deadlineDate - currentDate;
+
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance %  (1000 * 60)) / 1000);
+
+                    // countdownDays.innerHTML = days;
+                    countdownHours.innerHTML = hours;
+                    countdownMinutes.innerHTML = minutes;
+                    countdownSeconds.innerHTML = seconds;
+                }, 1000);
+            })();
+
+</script>
+
+
+    <div class="mx-4 md:mx-8 p-1 min-h-screen">
+        <div class="grid grid-cols-8">
+            <div class="col-span-1 md:col-span-2 overflow-auto h-64">
+
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-2 mt-2">
+
+                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">1</button>
+                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">2</button>
+                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">3</button>
+                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">4</button>
+                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">5</button>
+                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">6</button>
+                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">7</button>
+                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">8</button>
+                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">9</button>
+                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">10</button>
+                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">11</button>
+                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">12</button>
+                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">13</button>
+                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">14</button>
+                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">15</button>
+                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">16</button>
+                    <button class="w-full bg-gray-900 text-white p-1 hover:bg-gray-800">17</button>
+                </div>
+
+            </div>
+            <div class="col-span-7 md:col-span-6 p-4">
+                <h2 class="text-sm">Ques 1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, corporis
+                    quisquam doloremque quidem quas, repudiandae  br
+                    <br> <br> vero iste possimus voluptate numquam ipsum laborum,
+                    optio animi! Id pariatur quibusdam odio maxime nesciunt!.</h2>
+                    <div class="pl-2 pt-2">
+
+                 
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label> <br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </div>
+            </div>
+        </div>
+
+<div class="text-sm">
+        <button
+            class="bg-yellow-400 text-black hover:bg-yellow-500  border border-yellow-500 hover:border-yellow-600 shadow font-semibold px-1 py-1 inline-block mx-2 my-1  w-24 text-center"><i
+                class="fas fa-arrow-circle-left"></i> Previous</button>
+        <button
+            class="bg-yellow-400 text-black hover:bg-yellow-500  border border-yellow-500 hover:border-yellow-600 shadow font-semibold px-1 py-1 inline-block mx-2 my-1  w-18 text-center"><i
+                class="fas fa-flag"></i> Flag</button>
+        <button
+            class="bg-yellow-400 text-black hover:bg-yellow-500  border border-yellow-500 hover:border-yellow-600 shadow font-semibold px-1 py-1 inline-block mx-2 my-1  w-18 text-center">
+            Next <i class="fas fa-arrow-circle-right"></i></button>
+            <hr>
+            <p class="text-center"><span>0</span> Attemped, 
+                <span>12</span> Not Attemped, 
+                <span>23</span> Flag
+         </p>
+
+            <div class="bg-black py-2"> 
+                <button onclick="openModal(true)"
+                class="bg-green-600 text-black hover:bg-green-500 rounded border border-black font-semibold px-1 py-1 inline-block mx-1 my-1  w-32 text-center">
+                Instructions</button>
+                 <button
+                class="bg-red-600 text-black hover:bg-green-500  rounded shadow font-semibold px-1 py-1 inline-block mx-1 my-1  w-32 text-center">
+                End Test <i class="fas fa-hourglass-end"></i></button>
+    
+            </div>
+           
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- overlay -->
+<div id="modal_overlay" class="hidden absolute inset-0 bg-black bg-opacity-30 h-screen w-full flex justify-center items-start md:items-center pt-10 md:pt-0">
+
+    <!-- modal -->
+    <div id="modal" class="pacity-0 transform -translate-y-full overflow-y-auto scale-150  relative w-10/12 md:w-1/2 h-3/4  md:h-3/4 bg-white rounded shadow-lg transition-opacity transition-transform duration-300">
+    
+        <!-- button close -->
+        <button 
+        onclick="openModal(false)"
+        class="absolute top-1 right-3 bg-yellow-500 hover:bg-red-600 text-2xl w-10 h-10 rounded-full focus:outline-none text-white">
+        <i class="fas fa-times"></i>
+        </button>
+    
+        <!-- header -->
+        <div class="px-4 py-3 border-b bg-gray-900 border-gray-200">
+        <h2 class="text-xl font-semibold text-gray-100">Instructions:</h2>
+        </div>
+    
+        <!-- body -->
+        <div class="w-full h-auto p-3 ">
+            <ul class="list-disc pl-8">
+                <li>sa s as  sa s a s a sa a s </li>
+                <li>sa s as  sa s a s a sa a s </li>
+                <li>sa s as  sa s a s a sa a s </li>
+                <li>sa s as  sa s a s a sa a s </li>
+                <li>sa s as  sa s a s a sa a s </li>
+                <li>sa s as  sa s a s a sa a s </li>
+                <li>sa s as  sa s a s a sa a s </li>
+                <li>sa s as  sa s a s a sa a s </li>
+                <li>sa s as  sa s a s a sa a s </li>
+                <li>sa s as  sa s a s a sa a s </li>
+            </ul>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, quis tempora! Similique, explicabo quaerat maxime corrupti tenetur blanditiis voluptas molestias totam? Quaerat laboriosam suscipit repellat aliquam blanditiis eum quos nihil.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, quis tempora! Similique, explicabo quaerat maxime corrupti tenetur blanditiis voluptas molestias totam? Quaerat laboriosam suscipit repellat aliquam blanditiis eum quos nihil.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, quis tempora! Similique, explicabo quaerat maxime corrupti tenetur blanditiis voluptas molestias totam? Quaerat laboriosam suscipit repellat aliquam blanditiis eum quos nihil.
+    
+            
+    </div>
+    
+
+    </div>
+    
+    </div>
+    
+    <script>
+    const modal_overlay = document.querySelector('#modal_overlay');
+    const modal = document.querySelector('#modal');
+    
+    function openModal (value){
+        const modalCl = modal.classList
+        const overlayCl = modal_overlay
+    
+        if(value){
+        overlayCl.classList.remove('hidden')
+        setTimeout(() => {
+            modalCl.remove('opacity-0')
+            modalCl.remove('-translate-y-full')
+            modalCl.remove('scale-150')
+        }, 100);
+        } else {
+        modalCl.add('-translate-y-full')
+        setTimeout(() => {
+            modalCl.add('opacity-0')
+            modalCl.add('scale-150')
+        }, 100);
+        setTimeout(() => overlayCl.classList.add('hidden'), 300);
+        }
+    }
+    openModal(true)
+    </script>
+</body>
+
+</html>
